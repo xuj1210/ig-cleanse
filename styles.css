@@ -1,0 +1,21 @@
+#dropboxes {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+#display-list {
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    line-height: 1.7rem;
+}
+
+.roboto-font {
+    font-family: Roboto, sans-serif;
+    font-weight: normal
+}

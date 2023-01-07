@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>IG Followers Cleanse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="roboto-font">
+    <div>
+        <div>
+            Steps:
+            <ol>
+                <li>Go to
+                    <a href="https://www.instagram.com/download/request" target="_blank">this link</a>
+                    and download your information as JSON
+                </li>
+                <li>
+                    Open the downloaded .zip file and click to the followers_and_following folder
+                </li>
+                <li>
+                    Copy "followers.json" and "following.json" to a place you'll remember on your computer (ex.
+                    downloads,
+                    desktop)
+                </li>
+            </ol>
+        </div>
+        <div id="dropboxes">
+            <div class="dropbox">
+                <span>Select the FOLLOWERS file here: </span>
+                <input type="file" accept=".json" name="followers" id="followers-input" class="roboto-font" />
+            </div>
+            <div class="dropbox">
+                <span>Select the FOLLOWING file here: </span>
+                <input type="file" accept=".json" name="following" id="following-input" class="roboto-font" />
+
+            </div>
+        </div>
+        <ol id="display-list">
+        </ol>
+    </div>
+    </div>
+</body>
+<script type="module" src='index.js'></script>
+
+</html>
