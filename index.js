@@ -36,7 +36,10 @@ function readFile(file) {
 
 function handleJSON(event) {
     const str = event.target.result;
-    const data = JSON.parse(str);
+    let data = JSON.parse(str);
+    if (Array.isArray(data)) {
+        data = { "relationships_followers": data };
+    }
     for (const prop in data) MASTER_LISTS[prop] = cleanList(data[prop]);
     if (MASTER_LISTS.relationships_followers && MASTER_LISTS.relationships_following) {
         MASTER_LISTS.relationships_followers = new Set(MASTER_LISTS.relationships_followers);
